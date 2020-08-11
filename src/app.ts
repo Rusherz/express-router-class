@@ -29,7 +29,7 @@ class App {
 
 	private initializeControllers() {
 		this.controllers.forEach((controller: any) => {
-			this.app.use(`/v1/${controller.basePath}`, controller.router)
+			this.app.use(`/v1${controller.basePath}`, controller.router)
 		})
 	}
 
