@@ -46,7 +46,7 @@ export default class UsersController {
 					this.router.get(path, this[route.function])
 					break
 				case "post":
-					this.router.get(path, this[route.function])
+					this.router.post(path, this[route.function])
 					break
 			}
 		})
